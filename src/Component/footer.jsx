@@ -1,6 +1,5 @@
 import React from "react";
-import { assets } from "../assets/assets";
-
+import { assets } from "../assets/assets.js";  
 const Footer = () => {
 return ( <div className="w-full bg-white shadow-inner py-6 px-8 flex flex-col md:flex-row items-center justify-between text-gray-600">
 

@@ -1,11 +1,14 @@
-import { assets } from "../assets/assets";
-import React from "react";
+import React, {  useContext } from "react";
+import { assets } from "../assets/assets.js";
 import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate} from "react-router-dom";
+import { AppContext } from "../context/AppContext"; // 👈 yeh import add karo
+// use navigate ko impor tkr -> 3 : 25
 const Navbar = () => {
   const { user } = useUser();
   const { openSignIn } = useClerk();
+  const navigate = useNavigate();
+  const { setShowRecruiterLogin } = useContext(AppContext);
 
   return (
     <div className="shadow py-4">
@@ -27,13 +30,13 @@ const Navbar = () => {
         ) : (
           <div className="flex gap-6 sm:gap-10 items-center">
             <button
-              onClick={() => openSignIn()}
+              onClick={e => setShowRecruiterLogin(true)} 
               className="text-gray-600 text-sm px-3 py-1"
             >
               Recruiter Login
             </button>
             <button
-              onClick={() => openSignIn()}
+              onClick={e => openSignIn()}
               className="bg-blue-600 text-white text-sm px-4 py-1.5 rounded-full"
             >
               Login

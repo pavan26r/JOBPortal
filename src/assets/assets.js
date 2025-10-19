@@ -178,10 +178,10 @@ export const jobsData = [
         </ol>
         <h2><strong>Skills Required</strong></h2>
         <ol>
-            <li>Proficiency in HTML, CSS, and JavaScript frameworks (e.g., React, Angular).</li>
-            <li>Experience with server-side languages (e.g., Node.js, Python).</li>
-            <li>Familiarity with relational and non-relational databases (e.g., MySQL, MongoDB).</li>
-            <li>Strong understanding of web security and performance optimization.</li>
+            <li>Proficiency in HTML, CSS, and JavaScript frameworks (e.g., React, Angular). </li>
+            <li>Experience with server-side languages (e.g., Node.js, Python). </li>
+            <li>Familiarity with relational and non-relational databases (e.g., MySQL, MongoDB). </li>
+            <li>Strong understanding of web security and performance optimization. </li>
             <li>Ability to work in an Agile environment.</li>
         </ol>`,
         salary: 82000,

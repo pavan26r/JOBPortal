@@ -1,5 +1,6 @@
 import React,{useContext,useRef} from 'react';
-import { assets } from "../assets/assets";
+import { assets } from "../assets/assets.js";
+
 import { AppContext } from '../context/AppContext';
 const Heron = () => {
  const {setSearchFilter,setIsSearched} = useContext(AppContext)
@@ -17,7 +18,6 @@ const Heron = () => {
 };
 setSearchFilter(searchData);
 setIsSearched(true);
-console.log(searchData);
 
     }
   return (

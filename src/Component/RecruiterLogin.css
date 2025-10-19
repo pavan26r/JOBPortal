@@ -1,0 +1,184 @@
+/* Overlay background */
+.recruiter-login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+
+/* Main form container */
+.recruiter-login {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Headings and paragraph */
+.recruiter-login h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.recruiter-login p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Input fields */
+.input-field {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.input-field img {
+  width: 20px;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+.input-field input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Button */
+.recruiter-login button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.recruiter-login button:hover {
+  background: #0056b3;
+}
+
+/* Toggle between login/register */
+.toggle-state {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.toggle-state span {
+  color: #007bff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-state span:hover {
+  text-decoration: underline;
+}
+
+/* Forgot password */
+.forgot-password {
+  font-size: 12px;
+  color: #0073ff;
+  margin: 8px 0;
+  cursor: pointer;
+  text-align: right;
+}
+
+/* Upload screen styles */
+.upload-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed #ccc;
+  padding: 30px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.upload-box:hover {
+  background-color: #f9f9f9;
+}
+
+.upload-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.upload-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .recruiter-login {
+    padding: 30px 20px;
+  }
+
+  .recruiter-login h1 {
+    font-size: 24px;
+  }
+
+  .upload-box {
+    padding: 25px 16px;
+    max-width: 90%;
+  }
+
+  .upload-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

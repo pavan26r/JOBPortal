@@ -1,5 +1,5 @@
-import React from "react";     // ✅ pointing wali image ka path
-import { assets } from "../assets/assets";
+import React from "react"; 
+import { assets } from "../assets/assets.js";  
 const AppDownloadSection = () => {
   return (
     <div className="bg-white shadow-lg rounded-2xl flex flex-col md:flex-row items-center justify-between px-8 py-12 gap-8">
