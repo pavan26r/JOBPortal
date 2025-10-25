@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Applications from "./pages/Applications.jsx";
-import Applyjob from "./pages/applyjob.jsx";
+import Applyjob from "./pages/Applyjob.jsx";
 import RecruiterLogin from "./Component/RecruiterLogin.jsx";
 import { AppContext } from "./context/AppContext";
 import Dashboard from "./pages/Dashboard.jsx";
